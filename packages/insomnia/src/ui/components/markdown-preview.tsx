@@ -50,7 +50,7 @@ export const MarkdownPreview: FC<Props> = ({ markdown, heading }) => {
   }, [compiled]);
   const _handleClickLink = (event: any) => {
     event.preventDefault();
-    window.main.openInBrowser(event.target.getAttribute('href'));
+    window.main.openInBrowser(event.currentTarget.getAttribute('href'));
   };
 
   return (
